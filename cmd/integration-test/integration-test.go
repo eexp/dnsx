@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
+	"github.com/eexp/dnsx/internal/testutils"
 	"github.com/logrusorgru/aurora"
-	"github.com/projectdiscovery/dnsx/internal/testutils"
 )
 
 var (

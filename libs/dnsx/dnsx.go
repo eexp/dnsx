@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"math"
 
+	"github.com/eexp/cdncheck"
 	miekgdns "github.com/miekg/dns"
-	"github.com/projectdiscovery/cdncheck"
 	retryabledns "github.com/projectdiscovery/retryabledns"
 	iputil "github.com/projectdiscovery/utils/ip"
 	sliceutil "github.com/projectdiscovery/utils/slice"
@@ -78,6 +78,11 @@ var DefaultOptions = Options{
 
 // DefaultResolvers contains the list of resolvers known to be trusted.
 var DefaultResolvers = []string{
+	"upd:114.114.114.114:53",
+	"upd:180.76.76.76:53",
+	"upd:112.124.47.27:53",
+	"upd:223.5.5.5:53",
+	"upd:223.6.6.6:53",
 	"udp:1.1.1.1:53",         // Cloudflare
 	"udp:1.0.0.1:53",         // Cloudflare
 	"udp:8.8.8.8:53",         // Google

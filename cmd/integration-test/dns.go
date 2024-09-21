@@ -4,8 +4,8 @@ import (
 	"net"
 	"strings"
 
+	"github.com/eexp/dnsx/internal/testutils"
 	"github.com/miekg/dns"
-	"github.com/projectdiscovery/dnsx/internal/testutils"
 )
 
 var dnsTestcases = map[string]testutils.TestCase{
